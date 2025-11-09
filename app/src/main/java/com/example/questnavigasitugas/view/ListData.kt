@@ -117,4 +117,61 @@ fun ListData(
                     modifier = Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(bottom = 8.dp)
                 ) {
-                    
+                    items(dataList) { data ->
+                        Card(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color.White
+                            ),
+                            shape = RoundedCornerShape(12.dp),
+                            elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+                        ) {
+                            Column(
+                                modifier = Modifier.padding(16.dp),
+                                verticalArrangement = Arrangement.spacedBy(12.dp)
+                            ) {
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween
+                                ) {
+                                    Column(
+                                        modifier = Modifier.weight(1f)
+                                    ) {
+                                        Text(
+                                            text = "UNIVERSITAS",
+                                            color = Color(0xFF7B1FA2),
+                                            fontWeight = FontWeight.Bold,
+                                            fontSize = 11.sp,
+                                            letterSpacing = 0.5.sp
+                                        )
+                                        Spacer(modifier = Modifier.height(4.dp))
+                                        Text(
+                                            text = data[0],
+                                            fontSize = 14.sp,
+                                            fontWeight = FontWeight.Medium,
+                                            color = Color(0xFF212121)
+                                        )
+                                    }
+
+                                    Column(
+                                        horizontalAlignment = Alignment.End,
+                                        modifier = Modifier.padding(start = 8.dp)
+                                    ) {
+                                        Text(
+                                            text = "AKREDITASI",
+                                            color = Color(0xFF7B1FA2),
+                                            fontWeight = FontWeight.Bold,
+                                            fontSize = 11.sp,
+                                            letterSpacing = 0.5.sp
+                                        )
+                                        Spacer(modifier = Modifier.height(4.dp))
+                                        Text(
+                                            text = data[1],
+                                            fontSize = 14.sp,
+                                            fontWeight = FontWeight.Medium,
+                                            color = Color(0xFF212121)
+                                        )
+                                    }
+                                }
+
+                                
