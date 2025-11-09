@@ -202,3 +202,26 @@ fun Formulir(
             }
         }
 
+        if (showDialog) {
+            AlertDialog(
+                onDismissRequest = { showDialog = false },
+                title = { Text(stringResource(id = R.string.data_berhasil)) },
+                text = {
+                    Column {
+                        Text("Nama Lengkap: $namaLengkap")
+                        Text("Jenis Kelamin: $jenisKelamin")
+                        Text("Program Studi: $programStudi")
+                        Text("Alamat: $alamat")
+                    }
+                },
+                confirmButton = {
+                    Button(onClick = {
+                        showDialog = false
+                        OnSubmitBtnClick()
+                    }) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
+
