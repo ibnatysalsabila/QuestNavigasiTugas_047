@@ -225,3 +225,17 @@ fun Formulir(
             )
         }
 
+        if (showWarning) {
+            AlertDialog(
+                onDismissRequest = { showWarning = false },
+                title = { Text("Peringatan") },
+                text = { Text("Harap isi semua data terlebih dahulu sebelum submit!") },
+                confirmButton = {
+                    Button(onClick = { showWarning = false }) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
+    }
+}
