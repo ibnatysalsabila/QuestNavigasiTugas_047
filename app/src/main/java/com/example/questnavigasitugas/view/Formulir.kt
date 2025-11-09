@@ -112,4 +112,39 @@ fun Formulir(
                             }
                         }
 
-                        
+                        Text(
+                            text = stringResource(id = R.string.program_studi),
+                            style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold)
+                        )
+                        ExposedDropdownMenuBox(
+                            expanded = expanded,
+                            onExpandedChange = { expanded = !expanded }
+                        ) {
+                            OutlinedTextField(
+                                value = programStudi,
+                                onValueChange = {},
+                                readOnly = true,
+                                label = { Text(stringResource(id = R.string.pilih_prodi)) },
+                                trailingIcon = {
+                                    ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
+                                },
+                                modifier = Modifier
+                                    .menuAnchor()
+                                    .fillMaxWidth()
+                            )
+                            ExposedDropdownMenu(
+                                expanded = expanded,
+                                onDismissRequest = { expanded = false }
+                            ) {
+                                prodiList.forEach { prodi ->
+                                    DropdownMenuItem(
+                                        text = { Text(prodi) },
+                                        onClick = {
+                                            programStudi = prodi
+                                            expanded = false
+                                        }
+                                    )
+                                }
+                            }
+                        }
+
