@@ -93,3 +93,23 @@ fun Formulir(
                             modifier = Modifier.fillMaxWidth()
                         )
 
+                        Text(
+                            text = stringResource(id = R.string.jenis_kelamin),
+                            style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold)
+                        )
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(10.dp)
+                        ) {
+                            jenisKelaminList.forEach { item ->
+                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                    RadioButton(
+                                        selected = (jenisKelamin == item),
+                                        onClick = { jenisKelamin = item }
+                                    )
+                                    Text(text = item)
+                                }
+                            }
+                        }
+
+                        
