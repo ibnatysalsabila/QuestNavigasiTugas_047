@@ -81,3 +81,15 @@ fun Formulir(
                         modifier = Modifier.padding(horizontal = 24.dp, vertical = 28.dp),
                         verticalArrangement = Arrangement.spacedBy(10.dp)
                     ) {
+                        Text(
+                            text = stringResource(id = R.string.nama),
+                            style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold)
+                        )
+                        OutlinedTextField(
+                            value = namaLengkap,
+                            onValueChange = { namaLengkap = it },
+                            label = { Text(stringResource(id = R.string.nama)) },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+
