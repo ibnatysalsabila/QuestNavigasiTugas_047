@@ -97,3 +97,19 @@ fun ListData(
                 )
                 .padding(innerPadding)
         ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 20.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "List Daftar Universitas",
+                    fontSize = 22.sp,
+                    fontFamily = FontFamily.SansSerif,
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF4A148C),
+                    modifier = Modifier.padding(vertical = 16.dp)
+                )
+
+                
