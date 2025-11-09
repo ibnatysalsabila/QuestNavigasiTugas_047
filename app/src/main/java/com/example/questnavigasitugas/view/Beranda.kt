@@ -97,3 +97,26 @@ fun Home(
 
                 Spacer(modifier = Modifier.weight(1f))
 
+                Button(
+                    onClick = OnMasukBtnClick,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF7B1FA2),
+                        contentColor = Color.White
+                    ),
+                    shape = RoundedCornerShape(25.dp),
+                    modifier = Modifier
+                        .height(50.dp)
+                        .width(200.dp)
+                ) {
+                    Text(
+                        text = "Masuk",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(50.dp))
+            }
+        }
+    }
+}
