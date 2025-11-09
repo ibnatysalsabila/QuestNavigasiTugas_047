@@ -23,4 +23,32 @@ fun ListData(
     OnBerandaClick: () -> Unit,
     OnFormulirClick: () -> Unit
 ) {
+    val dataList = listOf(
+        listOf(
+            "Universitas Gadjah Mada",
+            "Unggul",
+            "Teknik",
+            "Informatika"),
+        listOf(
+            "Universitas Indonesia",
+            "Unggul",
+            "Ilmu Komputer",
+            "Sistem Informasi"),
+        listOf(
+            "Universitas Brawijaya",
+            "A",
+            "Teknik",
+            "Teknik Komputer"),
+        listOf(
+            "Universitas Diponegoro",
+            "A",
+            "Ekonomi dan Bisnis",
+            "Manajemen"),
+        listOf(
+            "Universitas Airlangga",
+            "Unggul",
+            "Ekonomi dan Bisnis",
+            "Akuntansi"),
+    )
+
     
