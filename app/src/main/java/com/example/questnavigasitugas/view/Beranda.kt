@@ -36,4 +36,18 @@ fun Home(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.fillMaxSize()
             ) {
-               
+                Spacer(modifier = Modifier.height(150.dp))
+
+                Text(
+                    text = "PENDAFTARAN SNBP 2025",
+                    fontSize = 28.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = FontFamily.Serif,
+                    color = Color(0xFF4A148C),
+                    textAlign = TextAlign.Center,
+                    lineHeight = 30.sp,
+                    modifier = Modifier.padding(horizontal = 24.dp)
+                )
+
+                Spacer(modifier = Modifier.height(40.dp))
+
