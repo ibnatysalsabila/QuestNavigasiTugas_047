@@ -76,4 +76,24 @@ fun Home(
                         textAlign = TextAlign.Center
                     )
 
-                    
+                    Spacer(modifier = Modifier.height(28.dp))
+
+                    Text(
+                        text = stringResource(id = R.string.nama_lengkap),
+                        fontSize = 19.sp,
+                        color = Color(0xFF4A148C),
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center
+                    )
+                    Spacer(modifier = Modifier.height(6.dp))
+                    Text(
+                        text = stringResource(id = R.string.nim),
+                        fontSize = 17.sp,
+                        color = Color(0xFF6A1B9A),
+                        fontWeight = FontWeight.SemiBold,
+                        textAlign = TextAlign.Center
+                    )
+                }
+
+                Spacer(modifier = Modifier.weight(1f))
+
