@@ -28,3 +28,10 @@ fun Formulir(
     var programStudi by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
 
+    val jenisKelaminList = listOf("Laki-laki", "Perempuan")
+    val prodiList = listOf("Informatika", "Sistem Informasi", "Teknik Komputer", "Manajemen", "Akuntansi")
+
+    var expanded by remember { mutableStateOf(false) }
+    var showDialog by remember { mutableStateOf(false) }
+    var showWarning by remember { mutableStateOf(false) }
+
