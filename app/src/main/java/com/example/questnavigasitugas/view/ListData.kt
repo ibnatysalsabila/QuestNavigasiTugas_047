@@ -83,4 +83,17 @@ fun ListData(
             }
         }
     ) { innerPadding ->
-        
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    brush = Brush.verticalGradient(
+                        listOf(
+                            Color(0xFFB39DDB),
+                            Color(0xFFD1C4E9),
+                            Color(0xFFF3E5F5)
+                        )
+                    )
+                )
+                .padding(innerPadding)
+        ) {
