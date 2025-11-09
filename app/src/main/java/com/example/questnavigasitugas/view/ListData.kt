@@ -112,4 +112,9 @@ fun ListData(
                     modifier = Modifier.padding(vertical = 16.dp)
                 )
 
-                
+                LazyColumn(
+                    verticalArrangement = Arrangement.spacedBy(10.dp),
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(bottom = 8.dp)
+                ) {
+                    
