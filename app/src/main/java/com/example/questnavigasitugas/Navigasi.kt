@@ -64,3 +64,9 @@ fun DataApp(
         }
     }
 }
+
+private fun cancelAndBackToHome(
+    navController: NavHostController
+) {
+    navController.popBackStack(route = Navigasi.Home.name, inclusive = false)
+}
