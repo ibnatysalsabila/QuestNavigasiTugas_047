@@ -176,3 +176,29 @@ fun Formulir(
                             ) {
                                 Text(stringResource(id = R.string.back))
                             }
+
+                            Button(
+                                onClick = {
+                                    if (namaLengkap.isBlank() ||
+                                        jenisKelamin.isBlank() ||
+                                        programStudi.isBlank() ||
+                                        alamat.isBlank()
+                                    ) {
+                                        showWarning = true
+                                    } else {
+                                        showDialog = true
+                                    }
+                                },
+                                modifier = Modifier.weight(1f),
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = Color(0xFF7B1FA2)
+                                ),
+                            ) {
+                                Text(stringResource(id = R.string.submit))
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
