@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">QuestNavigasiTugas</string>
+    <string name="title">Formulir Data Mahasiswa</string>
+    <string name="nama_lengkap">Ibnaty Salsabila</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="nim">20230140047</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="program_studi">Program Studi</string>
+    <string name="pilih_prodi">Pilih Program Studi</string>
+    <string name="alamat">Alamat</string>
+    <string name="beranda">Beranda</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="list">List Daftar Universitas</string>
+
+    <string name="data_berhasil">Data Berhasil Disimpan</string>
 </resources>
