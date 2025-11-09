@@ -51,3 +51,29 @@ fun Home(
 
                 Spacer(modifier = Modifier.height(40.dp))
 
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center,
+                    modifier = Modifier.padding(horizontal = 30.dp)
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.snbp),
+                        contentDescription = "Logo SNBP",
+                        modifier = Modifier
+                            .size(300.dp),
+                        contentScale = ContentScale.Fit
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = "Seleksi Nasional Berbasis Prestasi",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.ExtraBold,
+                        color = Color(0xFF6A1B9A),
+                        fontFamily = FontFamily.Serif,
+                        letterSpacing = 1.2.sp,
+                        textAlign = TextAlign.Center
+                    )
+
+                    
