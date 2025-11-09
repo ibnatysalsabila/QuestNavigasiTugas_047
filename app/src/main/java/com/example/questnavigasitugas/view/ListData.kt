@@ -51,4 +51,36 @@ fun ListData(
             "Akuntansi"),
     )
 
-    
+    Scaffold(
+        containerColor = Color.Transparent,
+        bottomBar = {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) {
+                Button(
+                    onClick = OnBerandaClick,
+                    modifier = Modifier.weight(1f),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF7B1FA2)
+                    ),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Text(text = "Beranda")
+                }
+                Button(
+                    onClick = OnFormulirClick,
+                    modifier = Modifier.weight(1f),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF7B1FA2)
+                    ),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Text(text = "Formulir")
+                }
+            }
+        }
+    ) { innerPadding ->
+        
