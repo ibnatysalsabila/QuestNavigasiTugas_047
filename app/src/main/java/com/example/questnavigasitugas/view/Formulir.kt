@@ -163,3 +163,16 @@ fun Formulir(
                         Spacer(modifier = Modifier.height(40.dp))
 
 
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(16.dp)
+                        ) {
+                            Button(
+                                onClick = OnBackBtnClick,
+                                modifier = Modifier.weight(1f),
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = Color(0xFF7B1FA2)
+                                ),
+                            ) {
+                                Text(stringResource(id = R.string.back))
+                            }
