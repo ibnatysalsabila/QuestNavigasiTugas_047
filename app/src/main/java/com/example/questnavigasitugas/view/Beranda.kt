@@ -32,3 +32,8 @@ fun Home(
                 .fillMaxSize()
                 .background(Color.White)
         ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.fillMaxSize()
+            ) {
+               
