@@ -27,4 +27,8 @@ fun Home(
         modifier = Modifier.fillMaxSize(),
         color = Color.White
     ) {
-        
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.White)
+        ) {
