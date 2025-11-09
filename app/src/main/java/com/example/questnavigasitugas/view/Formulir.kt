@@ -148,3 +148,18 @@ fun Formulir(
                             }
                         }
 
+                        Text(
+                            text = stringResource(id = R.string.alamat),
+                            style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Bold)
+                        )
+                        OutlinedTextField(
+                            value = alamat,
+                            onValueChange = { alamat = it },
+                            label = { Text(stringResource(id = R.string.alamat)) },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+
+                        Spacer(modifier = Modifier.height(40.dp))
+
+
